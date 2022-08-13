@@ -1,0 +1,381 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>
+kasem website
+    </title>
+    <link rel="stylesheet" href="../html/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:   cursive,fangsong;
+      }
+      .navvv{
+        width: 100%;
+        height: 75px;
+        background: white;
+        position: fixed;
+        z-index: 100;   
+        display: flex; 
+      }
+      .logo img{
+        width: 170px;
+        height: 55px;
+        margin: 10px;
+        
+      }
+      .navbar {
+        position: absolute;
+        right: 43px;
+        top: 14px;
+    }
+      
+      .navbar ul {
+        display: flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-items: center;
+      }
+    .navbar  ul li {
+        margin-left: 65px;
+        margin-top: 12px;
+        font-size: 21px;
+        position: relative;
+      }
+       .navbar a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        transition: 0.5s ltr;
+        /* border: solid 1px; */
+        /* margin: 4px; */
+        padding: 7px;
+        /* border-radius: 10px;*/
+      }
+      header {
+        width: 1200px;
+        height: 75px;
+      }
+      .navbar ul .other::after {
+        content: "";
+        width: 0;
+        height: 2px;
+        display: block;
+        margin: auto;
+        background: black;
+        transition: 0.5s;
+      }
+      .navbar ul li:hover:after {
+        width: 100%;
+        border-radius: 1px;
+      }
+      .active{
+          border-bottom: black solid 2px;
+      }
+    .contact{
+        position: relative;
+     min-height: 100vh;
+     padding: 50px 50px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     background-image: url(../html/image/login2.jpg);
+     background-size: cover;
+    }
+    .contact .content h2{
+        font-size: 36px;
+        color: rgb(255, 255, 255);
+        font-weight: 500;
+    }
+    .contact .content p{
+        color: white;
+        font-weight: 300;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+    }
+    
+    .contactform{
+        width: 33%;
+        padding: 40px 40px 4px;
+        background:white ;
+        border-radius: 40px;
+    }
+    
+    .contactform h2{
+        font-size: 30px;
+        color: #333;
+        font: 500;
+        margin-left: 38%;
+    }
+    .inputBox{
+        position: relative;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .inputBox input,textarea{
+        width: 100%;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        border: none;
+        border-bottom: 2px solid #333;
+        outline: none;
+        resize: none;
+    }
+    span{
+        position: absolute;
+        left: 0;
+        padding: 5px 0;
+        font-size: 16px;
+        margin: 10px 0;
+        pointer-events: none;
+        transition: 0.5s;
+        columns: #666;
+    }
+    .submit:hover{
+        background-color:#666 ;
+        color: white;
+        border-radius: 10px;
+        transition: 0.5s;
+    
+    }
+    input:focus~ span,
+    input:valid~ span,
+    textarea:focus~ span,
+    textarea:valid~ span {
+        color:red ;
+        transform:translateY(-20px) ;
+        font-size: 12px;
+    }
+    .dont {
+        padding-top: 8  px;
+        text-align: center;
+        font-size: 17px;
+        color:#333333;
+      }
+      
+      .sign {
+        color: #005fa1;
+        text-decoration: none;
+      }
+      .sign:hover{
+          color: #333333;
+      }
+      .social {
+        width: 297px;
+        height: 52px;
+        /* display: flex; */
+        /* justify-content: center; */
+        margin-top: 5px;
+        margin-left: 20%;
+      }
+      .contactform .social a {
+        color: #333333;
+        font-size: 23px;
+        text-decoration: none;
+        padding-left: 23px;
+        /* padding-top: 46px; */
+        /* margin-left: -9px; */
+        transition: 0.5s;
+      }
+      .social a:hover {
+        color:#005fa1;
+      }
+      footer{
+        width: 100%;
+        height: 300px;
+        background: #131A22;
+        color: #cdcdcd;
+        font-family: sans-serif;
+        position: relative;
+        text-transform: capitalize;
+    }
+    footer .top{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+        /* align-items:center ; */
+        flex-direction: row;
+    }
+    footer h4 {
+        font-weight: 300;
+        margin-top: 50px;
+    }
+    footer ul{
+        font-size: 12px;
+        list-style: none;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+      footer .social1 a {
+        color: #ddd6d6;
+        font-size: 12px;
+        text-decoration: none;
+        padding-right: 5px;
+        margin-top: 4px;
+        transition: 0.5s;
+    }
+      footer  a{
+          text-decoration: none;
+          color: #ddd;
+      }
+      footer li {
+          transition: 0.5s;
+      }
+    footer .social2 a{
+        font-family: cursive;
+        font-size: 12px;
+    }
+      footer  a:hover {
+        color:#0083cf;
+      }
+      footer .buttom{
+          width: 100%;
+          height: 25%;
+          font-size: 12px;
+          position: absolute;
+          padding: 10px;
+        
+      }
+      footer .buttom ul{
+        display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+      }
+      footer .buttom ul li{
+          margin-left: 10px;
+      }
+      footer .kasem{
+          font-size: 11px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }</style>
+</head>
+
+<body>
+    <header>
+        <div class="navvv">
+        <div class=logo >
+     <a href="#"> <img src="../html/image/logo.png"></a>
+        </div>
+        <div class="navbar">
+            <ul class="nav">
+                <li class="other"><a href="../html/index.html" >home</a></li>
+                <li class="other"><a href="../html/contact.html" >contact</a></li>
+                <li class="other"><a href="#" >about</a></li>
+                <li class="active"><a href="../html/login.html" >login</a></li>
+            </ul>
+        </div>
+        </div>
+        
+    </header>
+   <section class="contact">
+  
+       <!-- <div class="content">
+           <h2>contact us</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur
+               <br> adipisicing elit. Recusandae asperna</p>
+       </div> -->
+    <div class="container">
+        
+        <div class="contactform">
+            <form>
+                <h2>login</h2>
+                <div class="inputBox">
+                    <input type="text" name="" required="required">
+                    <span>Username</span>
+                </div>
+                <div class="inputBox">
+                    <input type="password" name="" required="required">
+                    <span>password</span>
+                </div>
+               
+                <div class="inputBox">
+                    <input class="submit" type="submit" name="" value="login">
+                </div>
+                <p class="dont">Don't have account<br>
+                    <a href="#"class="sign">sign up</a> here<br><br>
+                    login with :</p>
+                    <div class="social">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-google"></a>
+                        </div>
+
+            </form>
+        </div>
+    </div>
+   </section>
+   <footer>
+    <div class="top">
+ <div class="get-know">
+     <h4>Get to Know Us</h4>
+ <ul>
+     <li><a href="#">Careers</a></li>
+     <li><a href="#">Blog</a></li>
+     <li><a href="#">About kasem</a></li>
+     <li><a href="#">Investor Relations</a></li>
+     <li><a href="#">kasem Devices</a></li>
+  </ul>
+  </div>
+    <div class="make-money">
+        <h4>Make money with us</h4>
+    <ul>
+     <li><a href="#">Sell products on kasem store</a></li>
+     <li><a href="#">ell on kasem store Business</a></li>
+     <li><a href="#">Sell apps on kasem store</a></li>
+     <li><a href="#">Become an Affiliate</a></li>
+     <li><a href="#">Advertise Your Products</a></li>
+     <li><a href="#">Self-Publish with Us</a></li>
+     <li><a href="#">See More Make Money with Us</a></li>
+     </ul>
+     </div>
+     <div class="pay">
+     <h4> Payment Products</h4>
+     <ul>
+     <li><a href="#">kasem Business Card</a></li>
+     <li><a href="#">Shop with Points</a></li>
+     <li><a href="#">Reload Your Balance</a></li>
+     <li><a href="#">kasem Currency Converter</a></li>
+     </ul>
+</div>
+    <div class="social1">
+        <h4>follow us</h4>
+        <ul>
+     <li><a href="#" class="fa fa-facebook"></a><a href="#" class="social2">facebook</a></li>
+     <li><a href="#" class="fa fa-instagram"></a><a href="#" class="social2">instagram</a></li>
+     <li><a href="#" class="fa fa-twitter"></a><a href="#"class="social2">twitter</a></li>
+     <li><a href="#" class="fa fa-youtube"></a><a href="#"class="social2">youtube</a></li>
+        </ul>
+     </div>
+     </div>
+     <div class="buttom">
+      <ul>
+          <li>Conditions of Use</li>
+          <li>Privacy Notice</li>
+          <li>Interest-Based Ads</li>
+          <li>&copy; 2021-2022, kasem.com, Inc. or its affiliates</li>
+         
+     </ul>
+     <div class="kasem">
+     <p>this website made by kasem al-kilani</p>
+     </div>
+ </div>
+ </footer>
+</body>
+</html>

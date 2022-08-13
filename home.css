@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:   cursive,fangsong;
+  }
+  .navvv{
+    width: 100%;
+    height: 75px;
+    background: white;
+    position: fixed;
+    z-index: 100;   
+    display: flex; 
+  }
+  .logo img{
+    width: 170px;
+    height: 55px;
+    margin: 10px;
+    
+  }
+  .navbar {
+    position: absolute;
+    right: 43px;
+    
+}
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+.navbar  ul li {
+    margin-left: 65px;
+    margin-top: 12px;
+    font-size: 21px;
+    position: relative;
+  }
+   .navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ltr;
+    /* border: solid 1px; */
+    /* margin: 4px; */
+    padding: 7px;
+    /* border-radius: 10px;*/
+  }
+  header {
+    width: 1200px;
+    height: 75px;
+  }
+  
+  header ul .search input{
+        text-decoration: none;
+        outline: none;
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+        height: 40px;
+    
+  }
+  header ul .search button{
+    width: 34px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    margin-left: -10px;
+    background: #000000bd;
+    color: white;
+    border-radius: 2px;
+    border: none;
+  }
+  .search input{
+    width: 80%;
+    margin: 10px;
+}
+  .navbar ul .other::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: black;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover:after {
+    width: 100%;
+    border-radius: 1px;
+  }
+  .active{
+      border-bottom: black solid 2px;
+  }
+  aside{
+    width: 20%;
+    /* height: 100%; */
+    background: rgb(255, 255, 255);
+    border-right: 2px solid #ddd;
+    margin-right: 10px;
+    padding: 32px;
+    line-height: 30px;
+}
+aside ul{
+    list-style: circle;
+    font-size: 15px;
+}
+main .main{
+    width: 80%;
+}
+  .toptop{
+      display: flex;
+  }
+  .ads{
+    width: 250px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    flex-direction: column;
+    line-height: 50px;
+    margin-left: -10px;
+}
+  .ads button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    background: #196cd3;
+    }
+    .ads h2{
+        color: black;
+    text-shadow: 1px 2px #fff3f3;
+    }
+  .slideshow {
+      width: 850px;
+      margin: auto ;
+      overflow: hidden;
+  }
+  .slide-wrapper{
+      width: calc(850px*3);
+      
+    animation: slide 10s ease-in-out infinite;
+    position: relative;
+  }
+ 
+  .slideshow img {
+      width: 850px;
+      height: 445px;
+
+  }
+  .slide{
+      position: relative;
+      float: left;
+      width: 850px;
+    
+  }
+  @keyframes slide  {
+   
+      0%,30%{left:0px;}
+      30%,70%{left:-850px;}
+      70%,100%{left:calc(-850px*2);}
+      
+     
+    }
+  
+    
+    
+    .top h1{
+        padding: 10px;
+    margin-left: 10px;
+    }
+    .it{
+        width: 100%;
+        /* height: 240px; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .it img{
+        width: 110px;
+        height: 120px;
+    }
+    .it .items{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .it .items div{
+        padding: 20px;
+    }
+    .it .items div button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    background: #196cd3;
+    }
+    .best  {
+        width: 100%;
+        height: 450px;
+
+    }
+    .tv  {
+        width: 100%;
+        height: 550px;
+    }
+    .best h1{
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .tv h1{
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .seller{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tv .seller{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .seller .in-seller{
+        width: 20%;
+    }
+    .tv .seller .in-seller{
+        width: 30%;
+    }
+    .seller .in-seller img{
+        width: 100%;
+        height: 220px;
+        margin-bottom: 10px;
+    }
+    .tv .seller .in-seller img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .seller .in-seller .in-left{
+        display: flex;
+        justify-content: space-around;
+    }
+    .seller .in-seller .in-left h5{
+        color: rgb(10, 10, 10);
+
+    }
+    .seller .in-seller .in-left del{
+        color: #b30000;
+    }
+    .seller .in-seller .in-left button{
+        width: 35%;
+        height: 35px;
+        padding: 5px;
+        align-self: center;
+        border: none;
+        outline: none;
+        background: #196cd3;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    main{
+        display: flex;
+        
+    }
+   
+    footer{
+        width: 100%;
+        height: 300px;
+        background: #131A22;
+        color: #cdcdcd;
+        font-family: sans-serif;
+        position: relative;
+        text-transform: capitalize;
+    }
+    footer .top{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+        /* align-items:center ; */
+        flex-direction: row;
+    }
+    footer h4 {
+        font-weight: 300;
+        margin-top: 50px;
+    }
+    footer ul{
+        font-size: 12px;
+        list-style: none;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+      footer .social a {
+        color: #ddd6d6;
+        font-size: 12px;
+        text-decoration: none;
+        padding-right: 5px;
+        margin-top: 4px;
+        transition: 0.5s;
+    }
+      footer  a{
+          text-decoration: none;
+          color: #ddd;
+      }
+      footer li {
+          transition: 0.5s;
+      }
+    footer .social2 a{
+        font-family: cursive;
+        font-size: 12px;
+    }
+      footer  a:hover {
+        color:#0083cf;
+      }
+      footer .buttom{
+          width: 100%;
+          height: 25%;
+          font-size: 12px;
+          position: absolute;
+          padding: 10px;
+        
+      }
+      footer .buttom ul{
+        display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+      }
+      footer .buttom ul li{
+          margin-left: 10px;
+      }
+      footer .kasem{
+          font-size: 11px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }

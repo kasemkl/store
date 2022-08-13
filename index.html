@@ -1,0 +1,614 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>
+kasem website
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../html/home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:   cursive,fangsong;
+  }
+  .navvv{
+    width: 100%;
+    height: 75px;
+    background: white;
+    position: fixed;
+    z-index: 100;   
+    display: flex; 
+  }
+  .logo img{
+    width: 170px;
+    height: 55px;
+    margin: 10px;
+    
+  }
+  .navbar {
+    position: absolute;
+    right: 43px;
+    
+}
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+  }
+.navbar  ul li {
+    margin-left: 65px;
+    margin-top: 12px;
+    font-size: 21px;
+    position: relative;
+  }
+   .navbar a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.5s ltr;
+    /* border: solid 1px; */
+    /* margin: 4px; */
+    padding: 7px;
+    /* border-radius: 10px;*/
+  }
+  header {
+    width: 1200px;
+    height: 75px;
+  }
+  
+  header ul .search input{
+        text-decoration: none;
+        outline: none;
+        border: 1px solid #e5e5e5;
+        padding: 10px;
+        height: 40px;
+    
+  }
+  header ul .search button{
+    width: 34px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    margin-left: -10px;
+    background: #000000bd;
+    color: white;
+    border-radius: 2px;
+    border: none;
+  }
+  .search input{
+    width: 80%;
+    margin: 10px;
+}
+  .navbar ul .other::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    background: black;
+    transition: 0.5s;
+  }
+  .navbar ul li:hover:after {
+    width: 100%;
+    border-radius: 1px;
+  }
+  .active{
+      border-bottom: black solid 2px;
+  }
+  aside{
+    width: 20%;
+    /* height: 100%; */
+    background: rgb(255, 255, 255);
+    border-right: 2px solid #ddd;
+    margin-right: 10px;
+    padding: 32px;
+    line-height: 30px;
+}
+aside ul{
+    list-style: circle;
+    font-size: 15px;
+}
+main .main{
+    width: 80%;
+}
+  .toptop{
+      display: flex;
+  }
+  .ads{
+    width: 250px;
+    height: 445px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ddd;
+    flex-direction: column;
+    line-height: 50px;
+    margin-left: -10px;
+}
+  .ads button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    background: #196cd3;
+    }
+    .ads h2{
+        color: black;
+    text-shadow: 1px 2px #fff3f3;
+    }
+  .slideshow {
+      width: 850px;
+      margin: auto ;
+      overflow: hidden;
+  }
+  .slide-wrapper{
+      width: calc(850px*3);
+      
+    animation: slide 10s ease-in-out infinite;
+    position: relative;
+  }
+ 
+  .slideshow img {
+      width: 850px;
+      height: 445px;
+
+  }
+  .slide{
+      position: relative;
+      float: left;
+      width: 850px;
+    
+  }
+  @keyframes slide  {
+   
+      0%,30%{left:0px;}
+      30%,70%{left:-850px;}
+      70%,100%{left:calc(-850px*2);}
+      
+     
+    }
+  
+    
+    
+    .top h1{
+        padding: 10px;
+    margin-left: 10px;
+    }
+    .it{
+        width: 100%;
+        /* height: 240px; */
+        display: flex;
+        justify-content: space-around;
+    }
+    .it img{
+        width: 110px;
+        height: 120px;
+    }
+    .it .items{
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .it .items div{
+        padding: 20px;
+    }
+    .it .items div button{
+    border: none;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    background: #196cd3;
+    }
+    .best  {
+        width: 100%;
+        height: 450px;
+
+    }
+    .tv  {
+        width: 100%;
+        height: 550px;
+    }
+    .best h1{
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .tv h1{
+        width: 100%;
+        padding: 10px;
+        margin-left: 10px;
+        margin-bottom: 50px;
+    }
+    .seller{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .tv .seller{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .seller .in-seller{
+        width: 20%;
+    }
+    .tv .seller .in-seller{
+        width: 30%;
+    }
+    .seller .in-seller img{
+        width: 100%;
+        height: 220px;
+        margin-bottom: 10px;
+    }
+    .tv .seller .in-seller img{
+        width: 100%;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .seller .in-seller .in-left{
+        display: flex;
+        justify-content: space-around;
+    }
+    .seller .in-seller .in-left h5{
+        color: rgb(10, 10, 10);
+
+    }
+    .seller .in-seller .in-left del{
+        color: #b30000;
+    }
+    .seller .in-seller .in-left button{
+        width: 35%;
+        height: 35px;
+        padding: 5px;
+        align-self: center;
+        border: none;
+        outline: none;
+        background: #196cd3;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    main{
+        display: flex;
+        
+    }
+   
+    footer{
+        width: 100%;
+        height: 300px;
+        background: #131A22;
+        color: #cdcdcd;
+        font-family: sans-serif;
+        position: relative;
+        text-transform: capitalize;
+    }
+    footer .top{
+        width: 100%;
+        height: 75%;
+        display: flex;
+        justify-content: space-around;
+        /* align-items:center ; */
+        flex-direction: row;
+    }
+    footer h4 {
+        font-weight: 300;
+        margin-top: 50px;
+    }
+    footer ul{
+        font-size: 12px;
+        list-style: none;
+        font-size: 12px;
+        margin-top: 2px;
+    }
+      footer .social a {
+        color: #ddd6d6;
+        font-size: 12px;
+        text-decoration: none;
+        padding-right: 5px;
+        margin-top: 4px;
+        transition: 0.5s;
+    }
+      footer  a{
+          text-decoration: none;
+          color: #ddd;
+      }
+      footer li {
+          transition: 0.5s;
+      }
+    footer .social2 a{
+        font-family: cursive;
+        font-size: 12px;
+    }
+      footer  a:hover {
+        color:#0083cf;
+      }
+      footer .buttom{
+          width: 100%;
+          height: 25%;
+          font-size: 12px;
+          position: absolute;
+          padding: 10px;
+        
+      }
+      footer .buttom ul{
+        display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+      }
+      footer .buttom ul li{
+          margin-left: 10px;
+      }
+      footer .kasem{
+          font-size: 11px;
+          display: flex;
+          justify-content: center;
+          align-content: center;
+      }
+    </style>
+</head>
+
+<body>
+
+   <section class="contact">
+    <header>
+        <div class="navvv">
+        <div class=logo >
+     <a href="#"> <img src="../html/image/logo.png"></a>
+        </div>
+        <div class="navbar">
+            <ul class="nav">
+                <li class="search"><input type="search" placeholder="Search..."><button><i class="fa fa-search" aria-hidden="true"></i></button></li>
+                <li class="active"><a href="#" >home</a></li>
+                <li class="other"><a href="../html/contact.html" >contact</a></li>
+                <li class="other"><a href="#" >about</a></li>
+                <li class="other"><a href="../html/login.html" >login</a></li>
+            </ul>
+        </div>
+        </div>
+        
+    </header>
+   
+    <main>
+    <aside>
+        <h4>Department</h4>
+        <ul name=depar>
+          
+        <li>Electronics</li>
+        <li>Computers & Accessories</li>
+        <li>Computers & Tablets</li>
+       <li>Laptops</li>
+       <li>2 in 1 Laptops</li>
+       <li>Traditional Laptops</li>
+       </ul>
+    </aside>
+    
+<section class="main"> 
+    <div class="toptop">
+        <div class="ads">
+            <h2>20% off today</h2>
+        <button>shop-now</button>
+        </div>
+    <div class="slideshow">
+        <div class="slide-wrapper">
+    <div class="slide">
+        <img src="../html/image/slide22.jpg">
+        <!-- <h3>high quality</h3> -->
+    </div>
+    <div class="slide">
+        <img src="../html/image/slide33.jpg">
+        <!-- <h3>high quality</h3> -->
+    </div>
+    <div class="slide">
+        <img src="../html/image/slide 5.jpg">
+        <!-- <h3>high quality</h3> -->
+    </div>
+    </div>
+</div>
+</div>
+
+<div class="top">
+<h1>Top rated</h1>
+<div class="it">
+   
+        <div class="items">
+        <div>
+            <h4>media=based</h3>
+                <p>
+                    ASUS L410 MA-DB04 Ultra <br>Thin Laptop, 14” FHD Display,</p>
+                <button>shop-now</button>
+        </div>
+        <img src="../html/image/asus.jpg">
+    </div>
+    <div class="items">
+        <div>
+            <h4>media=based</h3>
+                <p>HP Chromebook 14 Laptop, <br>Intel Celeron N4020,32GB</p>
+                <button>shop-now</button>
+        </div>
+        <img src="../html/image/hpp.jpg">
+    </div>
+    <div class="items">
+        <div>
+            <h4>media=based</h3>
+                <p>HP 15-inch Laptop,<br> 11th Generation Intel Core i5</p>
+                <button>shop-now</button>
+        </div>
+        <img src="../html/image/hp2.jpg">
+    </div>
+    <div class="items">
+        <div>
+            <h4>media=based</h3>
+                <p>
+                    HP Pavilion 15-inch Laptop,<br> 11th Generation Intel Core i7</p>
+                <button>shop-now</button>
+        </div>
+        <img src="../html/image/pavilon.jpg">
+    </div>
+</div>
+</div>
+<br>
+    <div class="best">
+        <h1>Best seller</h1>
+        <div class="seller">
+            <div class="in-seller">
+                <img src="image/acer2.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>Acer Aspire </p>
+                        <h5>370$</h5>
+                        <del>400$</del>
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+            <div class="in-seller">
+                <img src="image/lenovo.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>
+                            Lenovo Chromebook</p>
+                        <h5>399$</h5>
+                        <del>420$</del>
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+            <div class="in-seller">
+                <img src="image/acer.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>Acer Spin 311</p>
+                        <h5>250$</h5>
+                        <del>300$</del>
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+            <div class="in-seller">
+                <img src="image/samsung.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>SAMSUNG Chromebook </p>
+                        <h5>230$</h5>
+                        <del>250$</del>
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tv">
+        <h1>New releases</h1>
+        <div class="seller">
+            <div class="in-seller">
+                <img src="image/tcltv.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>
+                            TCL 32-inch Class 3-Series HD LED Smart Android TV -</p>
+                        <h5>220$</h5>
+                        <!-- <del>400$</del> -->
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+            <div class="in-seller">
+                <img src="image/samsungtv.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>
+                            SAMSUNG 65-Inch Class Crystal UHD AU8000 Series -</p>
+                        <h5>399$</h5>
+                        <!-- <del>420$</del> -->
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+            <div class="in-seller">
+                <img src="image/vizotv.jpg">
+                <div class="in-left">
+                    <div>
+                        <p>VIZIO 65-Inch V-Series 4K UHD LED HDR Smart TV </p>
+                        <h5>250$</h5>
+                        <!-- <del>300$</del> -->
+                    </div>
+                    <button>buy-now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    </section>
+   </main>
+   <footer>
+       <div class="top">
+    <div class="get-know">
+        <h4>Get to Know Us</h4>
+    <ul>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About kasem</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">kasem Devices</a></li>
+     </ul>
+     </div>
+       <div class="make-money">
+           <h4>Make money with us</h4>
+       <ul>
+        <li><a href="#">Sell products on kasem store</a></li>
+        <li><a href="#">ell on kasem store Business</a></li>
+        <li><a href="#">Sell apps on kasem store</a></li>
+        <li><a href="#">Become an Affiliate</a></li>
+        <li><a href="#">Advertise Your Products</a></li>
+        <li><a href="#">Self-Publish with Us</a></li>
+        <li><a href="#">See More Make Money with Us</a></li>
+        </ul>
+        </div>
+        <div class="pay">
+        <h4> Payment Products</h4>
+        <ul>
+        <li><a href="#">kasem Business Card</a></li>
+        <li><a href="#">Shop with Points</a></li>
+        <li><a href="#">Reload Your Balance</a></li>
+        <li><a href="#">kasem Currency Converter</a></li>
+        </ul>
+</div>
+       <div class="social">
+           <h4>follow us</h4>
+           <ul>
+        <li><a href="#" class="fa fa-facebook"></a><a href="#" class="social2">facebook</a></li>
+        <li><a href="#" class="fa fa-instagram"></a><a href="#" class="social2">instagram</a></li>
+        <li><a href="#" class="fa fa-twitter"></a><a href="#"class="social2">twitter</a></li>
+        <li><a href="#" class="fa fa-youtube"></a><a href="#"class="social2">youtube</a></li>
+           </ul>
+        </div>
+        </div>
+        <div class="buttom">
+         <ul>
+             <li>Conditions of Use</li>
+             <li>Privacy Notice</li>
+             <li>Interest-Based Ads</li>
+             <li>&copy; 2021-2022, kasem.com, Inc. or its affiliates</li>
+            
+        </ul>
+        <div class="kasem">
+        <p>this website made by kasem al-kilani</p>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
